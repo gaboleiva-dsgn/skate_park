@@ -2,7 +2,7 @@
       <h2>Datos del perfil</h2>
       <hr class="w-50" />
 
-      <form action="/actualizar" method="post">
+      <form>
         <div class="form-group row w-50 m-auto">
           <div class="form-group col-12 col-sm-6">
             <label>Email</label>
@@ -40,10 +40,10 @@
           </div>
         </div>
         <div class="mb-1">
-          <button class="btn btn-primary">Actualizar</button>
+          <button class="btn btn-primary" formaction="/actualizar" formmethod="post">Actualizar</button>
         </div>
         <div>
-          <button class="btn btn-danger" formaction="/skater?id={{id}}" formmethod="delete">Eliminar cuenta</button>
+          <button class="btn btn-danger" formaction="/eliminar?id={{id}}" formmethod="post">Eliminar cuenta</button>
         </div>
       </form>
     </div>
